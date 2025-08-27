@@ -9,6 +9,12 @@ Mount a local container infrastructure to run for example, a Symfony app.
 
 * PHP 8.2
 
+* Node 20
+
+* npm 11.5.2
+
+* sass 1.91
+
 * MySQL 8.0
 
 * Apache 2.4.65
