@@ -18,18 +18,18 @@ Mount a local container infrastructure to run for example, a Symfony app.
 Create image and run containers for the first time:
 
 ```bash
-sudo docker-compose up -d --build
+sudo docker compose up -d --build
 ```
 
 Stop the containers:
 
 ```bash
-sudo docker-compose stop
+sudo docker compose stop
 ```
 
 Start the containers:
 
 ```bash
-sudo docker-compose start
+sudo docker compose start
 ```
 
