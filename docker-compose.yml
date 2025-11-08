@@ -1,17 +1,18 @@
 services:
   apache-php:
     build: ./docker/apache-php
-    container_name: symfony-apache-php
+    container_name: apache-php
     ports:
       - "8080:80"
     volumes:
-      - ./symfony:/var/www/html
+      - ./www:/var/www/html
+      - ./apache-config:/etc/apache2/sites-available/
     depends_on:
       - db
 
   db:
     image: mysql:8.0
-    container_name: symfony-mysql
+    container_name: mysql
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
